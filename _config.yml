@@ -104,3 +104,8 @@ tag_archive:
 
 analytics:
   provider: "custom"
+
+comments:
+  provider : "disqus"
+  disqus:
+    shortname: https-aidan-gallagher-github-io

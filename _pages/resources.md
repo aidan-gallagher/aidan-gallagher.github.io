@@ -35,6 +35,10 @@ This is a small subset of the resources I have learned from that I think are wor
 [Effective CMake - Daniel Pfeifer](https://www.youtube.com/watch?v=bsXLMQ6WgIk) (Youtube video)  
 [Professional CMake - Craig Scott](https://crascit.com/professional-cmake) (book)
 
+## Documentation
+
+[Technical Writing - Google](https://developers.google.com/tech-writing/overview) (online course) : A short and well structured course that I highly recommend.
+
 ## Data Structures & Algorithms
 
 [Abdul Bari](https://www.youtube.com/channel/UCZCFT11CWBi3MHNlGf019nw/videos?view=0&sort=p&flow=grid) (Youtube channel)  

@@ -15,8 +15,9 @@ This is a small subset of the resources I have learned from that I think are wor
 - [DDD: The Good Parts - Jimmy Bogard](https://www.youtube.com/watch?v=U6CeaA-Phqo) (Youtube video)
 - [Domain analysis - Microsoft](https://docs.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis)
 
-## Agile Principles
+## Agile
 
+- [Agile manifesto](https://www.agilealliance.org/agile101/the-agile-manifesto/) and [agile principles](https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/)
 - [Continuous Delivery - Dave Farley](https://www.youtube.com/c/ContinuousDelivery/videos?view=0&sort=p&flow=grid) (Youtube channel)
 
 ## Git
@@ -35,6 +36,10 @@ This is a small subset of the resources I have learned from that I think are wor
 - [Effective CMake - Daniel Pfeifer](https://www.youtube.com/watch?v=bsXLMQ6WgIk) (Youtube video)
 - [Professional CMake - Craig Scott](https://crascit.com/professional-cmake) (book)
 
+## Python
+
+- [Transforming Code into Beautiful, Idiomatic Python](https://www.youtube.com/watch?v=OSGv2VnC0go&list=WL&index=29&t=1677s0) (Youtube Video): A few tricks to write more idiomatic Python which usually results in less lines of code and faster execution.
+
 ## Documentation
 
 - [Technical Writing - Google](https://developers.google.com/tech-writing/overview) (online course) : A short and well structured course that I highly recommend.
@@ -43,3 +48,20 @@ This is a small subset of the resources I have learned from that I think are wor
 
 - [Abdul Bari](https://www.youtube.com/channel/UCZCFT11CWBi3MHNlGf019nw/videos?view=0&sort=p&flow=grid) (Youtube channel)
 - [Introduction to Algorithms - MIT](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb) (Youtube playlist)
+- [Leetcode](https://leetcode.com/problemset/algorithms): Lots of brain-teaser problems that typically require knowledge of data structures to develop an algorithmic solution.
+
+## Linux
+
+- Unix System Calls [Part 1](https://www.youtube.com/watch?v=xHu7qI1gDPA) & [Part 2](https://www.youtube.com/watch?v=2DrjQBL5FMU&t=45s) - Brian Will (Youtube video)
+- TODO: [Linux Device Drivers](https://lwn.net/Kernel/LDD3/) - Greg Kroah-Hartman et Al (Book)
+
+## Networking
+
+- [Networking tutorial - Ben Eater](https://www.youtube.com/playlist?list=PLowKtXNTBypH19whXTVoG3oKSuOcw_XeW) (Youtube playlist): Great explanation of networking from the physical layer up to the transport layer.
+- [How TCP Works - Chris Greer](https://www.youtube.com/playlist?list=PLW8bTPfXNGdAZIKv-y9v_XLXtEqrPtntm) (Youtube playlist)
+
+## Programming Paradigms
+
+- Object-Oriented Programming is Bad [Part 1](https://www.youtube.com/watch?v=QM1iUe6IofM) & [Part 2](https://www.youtube.com/watch?v=IRTfhkiAqPw) - Brian Will
+
+- TODO: [Object-Oriented Programming is Good\*](https://www.youtube.com/watch?v=0iyB0_qPvWk) - Brian Will

@@ -80,7 +80,9 @@ Bitbucket does not provide a way of viewing the change. What you are trying to v
 Find the 2 commit's SHA in bitbucket.
 ![rebase_commit_update_annotated](/assets/2021-03-01-clean-git-history/rebase_commit_update_annotated.png)
 Then use git to compare them  
-`git diff before_SHA after_SHA`  
+```
+git diff before_SHA after_SHA
+```
 ![git_diff.png](/assets/2021-03-01-clean-git-history/git_diff.png)
 
 This is a bit of an archaic view and not good for multiple files.
@@ -110,6 +112,9 @@ code --install-extension moshfeu.compare-folders
 ```
 COMPARE_FOLDERS=DIFF git difftool --dir-diff commit1_SHA commit2_SHA
 ```
+
+### Orphaned commits on remote server
+The previous step assumes you have access to both commits - the removed commit and the added commit. You will always have access to the added commit since it is referenced to by the branch. The removed commit is now a orphan which means there are no references to it. 
 
 ## Enforcing Good Commits
 

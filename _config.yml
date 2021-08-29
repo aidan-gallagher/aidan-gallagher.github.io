@@ -111,7 +111,10 @@ tag_archive:
 analytics:
   provider: "custom"
 
+repository: "aidan-gallagher/aidan-gallagher.github.io"
 comments:
-  provider : "disqus"
-  disqus:
-    shortname: https-aidan-gallagher-github-io
+  provider : "utterances"
+  utterances:
+    issue-term:          "pathname"
+    label:               "Blog-Comments"
+    theme:               "photon-dark"

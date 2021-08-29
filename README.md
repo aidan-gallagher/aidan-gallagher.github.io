@@ -17,5 +17,4 @@ To create your own version
 
 ## Admin
 
-Comments: [Disqus dashboard](https://https-aidan-gallagher-github-io.disqus.com/admin/)  
 Analytics: [Google Analytics dashboard](https://analytics.google.com/)

@@ -16,6 +16,10 @@ This is a small subset of the resources I have learned from that I think are wor
 - [DDD: The Good Parts - Jimmy Bogard](https://www.youtube.com/watch?v=U6CeaA-Phqo) (Youtube video)
 - [Domain analysis - Microsoft](https://docs.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis)
 
+### Microservices
+
+- [Principles Of Microservices - Sam Newman](https://youtu.be/PFQnNFe27kU) (Youtube video)
+
 ## Agile
 
 - [Agile manifesto](https://www.agilealliance.org/agile101/the-agile-manifesto/) and [agile principles](https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/)
@@ -55,7 +59,6 @@ This is a small subset of the resources I have learned from that I think are wor
 
 - Unix System Calls [Part 1](https://www.youtube.com/watch?v=xHu7qI1gDPA) & [Part 2](https://www.youtube.com/watch?v=2DrjQBL5FMU&t=45s) - Brian Will (Youtube video)
 - [Containers From Scratch - Liz Rice](https://www.youtube.com/watch?v=8fi7uSYlOdc) (Youtube video)
-- TODO: [Linux Device Drivers](https://lwn.net/Kernel/LDD3/) - Greg Kroah-Hartman et Al (Book)
 
 ## Networking
 
@@ -67,8 +70,6 @@ This is a small subset of the resources I have learned from that I think are wor
 ### OOP
 
 - Object-Oriented Programming is Bad [Part 1](https://www.youtube.com/watch?v=QM1iUe6IofM) & [Part 2](https://www.youtube.com/watch?v=IRTfhkiAqPw) - Brian Will
-
-- TODO: [Object-Oriented Programming is Good\*](https://www.youtube.com/watch?v=0iyB0_qPvWk) - Brian Will
 
 - [SOLID Principles](https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
 - [GRASP Princples](<https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)>)

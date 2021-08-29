@@ -88,7 +88,7 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
-      share: true
+      share: false
       related: true
       toc: true
       toc_label: "Table of Contents"

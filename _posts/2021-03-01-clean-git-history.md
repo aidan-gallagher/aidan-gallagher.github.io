@@ -5,6 +5,7 @@ categories:
   - Blog
 tags:
   - Git
+  - Infrastructure
 ---
 
 ## Introduction
@@ -12,7 +13,7 @@ tags:
 Writing good commit messages are important for
 
 - Reviewing pull requests
-- Maintaining code (understanding why a specific feature was added)
+- Maintaining code
 - Fixing bugs
 - Generating release notes
 
@@ -28,7 +29,9 @@ Secondly, when you are programming in the zone you may not want to break your fl
 
 Fortunately git supports rewriting history. This means your first attempt at writing the commit message does not have to be your final version.
 
-[Warning - only do this on a branch that you are working on alone]
+<p class="notice --warning">
+  Warning: only rewrite git history on a branch that you are working on alone
+</p>
 
 With this knowledge your first draft at commits can be quick and provide just enough information to be useful to yourself.
 
@@ -108,7 +111,7 @@ stage('Gitlint') {
 }
 ```
 
-# Summary
+## Summary
 
 - Good commit messages are important.
 - Commits can be cleaned up after the fact.

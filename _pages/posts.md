@@ -3,8 +3,8 @@ permalink: /posts-home/
 title: "Posts"
 ---
 
-[View posts by Year](/posts/)
+[Sorted by Year](/posts/)
 
-[Posts by Category](/categories/)
+[Sorted by Category](/categories/)
 
-[Posts by Tag](/tags/)
+[Sorted by Tag](/tags/)

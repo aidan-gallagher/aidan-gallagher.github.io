@@ -101,11 +101,11 @@ Development dockerfiles will have these main steps
 3. Install the dependencies from the file
 
    ```
-   RUN mk-build-deps \
-    && apt install --yes --fix-missing ./my-project-build-deps_*_all.deb   # Debian example
+   RUN apt-get install --yes devscripts equivs \
+    && mk-build-deps --install --remove --tool='apt-get --yes'             # Debian example
 
    RUN apt-get install --yes python3-pip \
-    && pip3 install -r dev-requirements.txt                                # Pip example
+    && pip3 install --requirement dev-requirements.txt                     # Pip example
    ```
 
 ## Docker locally

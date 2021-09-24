@@ -85,7 +85,7 @@ They will see a series of commits have been removed and new ones that have been 
 
 Bitbucket does not provide a way of viewing the change between the original commit on the feature branch and the new commit on the feature branch. Instead bitbucket will only show the change between the feature branch and the target branch (usually master).
 
-Locally you can view the comparison of 2 commits using `git diff` (or VSCode). On bitbucket you can find the SHA of HEAD before the rewrite (the most recently removed commit) and HEAD after the rewrite (the most recently added commit). You will always have access to the added commit since it is referred to by the branch. However, the removed commit is now a orphan, which means even though it exists on the server, `git pull` will not pull it down since the commit has no references. This means unless your development team agrees on some work around you can not guarantee reviewers will be able to compare you updates.
+Locally you can view the comparison of 2 commits using `git diff` (or VSCode). On bitbucket you can find the SHA of HEAD before the rewrite (the most recently removed commit) and HEAD after the rewrite (the most recently added commit). You will always have access to the added commit since it is referred to by the branch. However, the removed commit is now a orphan, which means even though it exists on the server, `git pull` will not pull it down since the commit has no references. This means unless your development team agrees on some work around you can not guarantee reviewers will be able to compare your updates.
 
 The approach I take is to reply to each PR comment that requires action with the commit hash that I have addressed the issue in.
 

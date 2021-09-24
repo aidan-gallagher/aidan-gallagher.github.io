@@ -150,6 +150,35 @@ There is no need to explicitly specify any args because Jenkins will
 - Set the working directory.
 - Set the UID & GID to the same as the host.
 
+## Only checking modified files
+
+Most checking tools (flake8, mypy, etc) can be run over a directory and they will check every relevant file. Sometimes instead of checking every file you may only want to check files that have been modified.
+This is useful when
+
+- working on a legacy system where you want to introduce new rules/checks going forward.
+- the checks take a long time.
+
+Using git a list of modified files can be determined:
+
+```
+git diff -G'.' --diff-filter=rd --find-renames=100% --name-only --commits {TARGET-BRANCH}...{SOURCE-BRANCH}
+```
+
+- `-G"."`: ignores files with only permission changes
+- `--diff-filter=rd`: ignores files that have been renamed or deleted
+- `--find-renames=100%`: ensures files classified as renamed have the exact same contents
+- `--name-only`: only print file names
+
+An example of a task (defined in python) that checks flake8 on modified files would look like this
+
+```
+def flake8(commits="master...HEAD"):
+    files = get_files(commits)
+    python_files = get_files_by_types(files, ["Python"])
+    if python_files:
+        subprocess.run(f"flake8 --count {python_files}", shell=True)
+```
+
 ## Summary
 
 - Developers often have several tasks to perform in a repository.
@@ -159,3 +188,4 @@ There is no need to explicitly specify any args because Jenkins will
   - Developers and servers to share the same environment to reduce inconsistences.
   - New starts to get up and running quickly.
   - Dependency installations to be isolated from the host OS
+- Git can be used to only check modified files

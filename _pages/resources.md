@@ -20,10 +20,11 @@ This is a small subset of the resources I have learned from that I think are wor
 
 - [Principles Of Microservices - Sam Newman](https://youtu.be/PFQnNFe27kU) (Youtube video)
 
-## Agile
+## Agile / Workflow
 
 - [Agile manifesto](https://www.agilealliance.org/agile101/the-agile-manifesto/) and [agile principles](https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/)
 - [Continuous Delivery - Dave Farley](https://www.youtube.com/c/ContinuousDelivery/videos?view=0&sort=p&flow=grid) (Youtube channel)
+- [Code Review Love](https://mtlynch.io/code-review-love/#4-answer-questions-with-the-code-itself)
 
 ## Git
 
@@ -73,3 +74,4 @@ This is a small subset of the resources I have learned from that I think are wor
 
 - [SOLID Principles](https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
 - [GRASP Princples](<https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)>)
+- [Dependency Injection Demystified](https://www.jamesshore.com/v2/blog/2006/dependency-injection-demystified)

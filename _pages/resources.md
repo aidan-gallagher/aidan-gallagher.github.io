@@ -56,10 +56,11 @@ This is a small subset of the resources I have learned from that I think are wor
 - [Introduction to Algorithms - MIT](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb) (Youtube playlist)
 - [Leetcode](https://leetcode.com/problemset/algorithms): Lots of brain-teaser problems that typically require knowledge of data structures to develop an algorithmic solution.
 
-## Linux
+## Operating Systems
 
 - Unix System Calls [Part 1](https://www.youtube.com/watch?v=xHu7qI1gDPA) & [Part 2](https://www.youtube.com/watch?v=2DrjQBL5FMU&t=45s) - Brian Will (Youtube video)
 - [Containers From Scratch - Liz Rice](https://www.youtube.com/watch?v=8fi7uSYlOdc) (Youtube video)
+- [Microkernels - David Evans](https://youtu.be/UMsscWnM67g) (Youtube video)
 
 ## Networking
 

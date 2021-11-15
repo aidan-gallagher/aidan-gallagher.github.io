@@ -84,7 +84,7 @@ The benefit are
 
 Development dockerfiles will have these main steps
 
-1. Start from a base image.
+1. Start from a base image
 
    ```
    FROM ubuntu:20.04
@@ -158,7 +158,7 @@ This is useful when
 - working on a legacy system where you want to introduce new rules/checks going forward.
 - the checks take a long time.
 
-Using git a list of modified files can be determined:
+Using git a list of modified files can be determined
 
 ```
 git diff -G'.' --diff-filter=rd --find-renames=100% --name-only --commits {TARGET-BRANCH}...{SOURCE-BRANCH}
@@ -187,5 +187,5 @@ def flake8(commits="master...HEAD"):
 - Containers allow
   - Developers and servers to share the same environment to reduce inconsistences.
   - New starts to get up and running quickly.
-  - Dependency installations to be isolated from the host OS
-- Git can be used to only check modified files
+  - Dependency installations to be isolated from the host OS.
+- Git can be used to only check modified files.

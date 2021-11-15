@@ -16,7 +16,7 @@ My quick reference notes on writing documentation.
 - Define an acronym on its first use
   - Don't cycle between the full term and the acronym
   - Don't define an acronym if it's only going to be used a few times
-- Disambiguate pronouns.
+- Disambiguate pronouns
   - Only use a pronoun after introducing the noun
   - If the pronoun is more than a few words away from the noun then repeat the noun
   - If you introduce a second noun between your noun and your pronoun, reuse your noun instead of using a pronoun

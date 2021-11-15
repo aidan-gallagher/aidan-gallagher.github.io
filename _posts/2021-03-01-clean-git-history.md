@@ -59,7 +59,7 @@ To do this in VSCode:
 
 1. Open up the Source Control view, then click a changed file to open the comparison.
 2. Select/highlight the lines you want to stage.
-3. Right click -> Stage Selected Ranges
+3. Right click -> Stage Selected Ranges.
 
 ## Reviewing a PR
 

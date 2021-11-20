@@ -12,7 +12,8 @@ My quick reference notes on writing documentation.
 # Words
 
 - Define new or unfamiliar terms
-- Use terms consistently (Don't have multiple names for the same thing)
+- Use terms consistently
+  - Don't have multiple names for the same thing
 - Define an acronym on its first use
   - Don't cycle between the full term and the acronym
   - Don't define an acronym if it's only going to be used a few times
@@ -31,7 +32,7 @@ My quick reference notes on writing documentation.
 
 # Clear Sentences
 
-- Reduce imprecise, weak or generic verbs
+- Reduce imprecise, weak and generic verbs
   - Bad: This error _happens_ when ...
   - Good: The system _generates_ this error when...
 - Reduce '_there is_' and '_there are_'
@@ -71,16 +72,14 @@ My quick reference notes on writing documentation.
 
 # Paragraphs
 
-- Write a great opening sentence. It should establish the paragraph's central point
+- The opening sentence should establish the paragraph's central point
 - Focus each paragraph on a single topic
-- Paragraphs should contain about 3 - 7 sentences
-- Good paragraphs
+- Paragraphs should contain around 3 - 7 sentences
 
 # Audience
 
 - Define your audience
 - Determine what your audience needs to learn
-- Fit documentation to your audience
 - Good documentation `=` "knowledge needed to do a task" `-` "the audience's current knowledge"
 
 # Longer Documents
@@ -92,10 +91,10 @@ My quick reference notes on writing documentation.
 # Formatting
 
 - Put code-related text in code font
-- Prefer SVG files or PNG files
+- Prefer SVG files and PNG files
 - Use descriptive link text
   - Bad: Want more? <a href="/moreInfo">Click here!</a>
-  - Good: For more information, see <a href="/moreInfo">the Volume Search landing page</a>
+  - Good: For more information, visit <a href="/moreInfo">the Volume Search landing page</a>
 
 # Editing
 
@@ -121,6 +120,5 @@ My quick reference notes on writing documentation.
 - Maintain sample code
   - Over time the system may change and so will the sample code
   - Test the sample code actually works
-  - Unit tests are for testing; sample programs are for educating
 - Example the anti-example
   - In addition to showing readers what to do, it is sometimes beneficial to show readers what not to do

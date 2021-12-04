@@ -75,19 +75,9 @@ The reviewers should be encouraged to step through each commit individually and 
 
 After making changes based off pull request feedback you do not want throw away the clean commit history with commit messages like "fixing various PR comments".
 
-You can continue to use interactive rebase tool, however, when using this approach the reviewers revisiting the PR can not easily see what changes you have implemented since the previous review.
-Rather than seeing a single commit like this.
-![normal_commit_update](/assets/2021-03-01-clean-git-history/normal_commit_update.png)  
-(Note: Bitbucket strips out newlines in the preview so the title and body are merged into 1 long line.)
-
-They will see a series of commits have been removed and new ones that have been added. This is because git will generated a new hash (unique ID) for every commit after the changed commit.
-![rebase_commit_update](/assets/2021-03-01-clean-git-history/rebase_commit_update.png)
-
-Bitbucket does not provide a way of viewing the change between the original commit on the feature branch and the new commit on the feature branch. Instead bitbucket will only show the change between the feature branch and the target branch (usually master).
-
-Locally you can view the comparison of 2 commits using `git diff` (or VSCode). On bitbucket you can find the SHA of HEAD before the rewrite (the most recently removed commit) and HEAD after the rewrite (the most recently added commit). You will always have access to the added commit since it is referred to by the branch. However, the removed commit is now a orphan, which means even though it exists on the server, `git pull` will not pull it down since the commit has no references. This means unless your development team agrees on some work around you can not guarantee reviewers will be able to compare your updates.
-
-The approach I take is to reply to each PR comment that requires action with the commit hash that I have addressed the issue in.
+You can continue to use the interactive rebase tool when addressing PR comments. After amending/rebasing commits Bitbucket Server previously only showed the comparison of HEAD of the target branch to HEAD of the source branch. Fortunately as of version 7.17, Bitbucket Server finally supports viewing the comparison of HEAD before the amending/rebasing to HEAD after the amending/rebasing.
+The reviewer can click "view changes" to see what has been amended.
+![rebased-commits](/assets/2021-03-01-clean-git-history/rebased-commits.png)  
 
 ## Enforcing Good Commits
 
@@ -115,5 +105,4 @@ stage('Gitlint') {
 
 - Good commit messages are important.
 - Commits can be cleaned up after the fact.
-- Rewriting commits after raising a PR can make reviewing harder.
 - Gitlint can be used in CI pipeline to automatically check commit quality.

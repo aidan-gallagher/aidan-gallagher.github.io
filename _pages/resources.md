@@ -29,6 +29,7 @@ This is a small subset of the resources I have learned from that I think are wor
 ## Git
 
 - [Pro Git](https://git-scm.com/book/en/v2) (book)
+- [Fix up and autosquash](https://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html) (article)
 
 ## C++
 

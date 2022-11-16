@@ -1,6 +1,6 @@
 ---
 title: "Clean Git History"
-excerpt: "Rewriting history to maintain a clean log"
+excerpt: "Rewriting history to maintain a clean log."
 categories:
   - Blog
 tags:

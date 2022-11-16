@@ -1,6 +1,6 @@
 ---
 title: "Continuous Integration Pipeline"
-excerpt: "Infrastructure to run tasks locally and on a continuous integration server"
+excerpt: "Infrastructure to run tasks locally and on a continuous integration server."
 categories:
   - Blog
 tags:

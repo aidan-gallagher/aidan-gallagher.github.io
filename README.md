@@ -9,8 +9,11 @@ To create your own version
 
 ## Build and Deploy
 
-**Install:** `sudo gem install bundler jekyll`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`bundle install`  
+**Install:**  
+1. `sudo apt-get install rubygems ruby-dev`
+2. `sudo gem install bundler jekyll`  
+3. `bundle install`  
+
 **Build locally:** `bundle exec jekyll serve`  
 **View locally:** http://localhost:4000/  
 **Deploy:** Push to Github and it will take care of the rest.

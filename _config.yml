@@ -75,7 +75,9 @@ author:
         aidgal2
         @
         gmail.com
-
+    - label: "Resume"
+      icon: "fas fa-fw fa-file"
+      url: "/assets/GallagherResume.pdf"
 
 words_per_minute: 150
 defaults:

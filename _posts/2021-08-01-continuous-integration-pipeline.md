@@ -7,6 +7,7 @@ tags:
   - Jenkins
   - Docker
   - Infrastructure
+  - Devops
 ---
 
 ## Introduction
@@ -23,14 +24,14 @@ There are a number of tasks a developer may wish to perform such as
 
 ## Desire for ease
 
-Sometimes the steps required to performing these tasks can get quite complicated. If the tasks are not easy for a developer, then
+Sometimes the steps required to performing these tasks can get quite complicated. If the tasks are not easy for a developer
 
 - The developer may not bother with certain tasks. Which means they may commit changes without running all the checking tools, or inspecting the generated documentation.
 - They may invoke the tools incorrectly by passing the wrong flags or omitting files.
 
 ## Desire to run locally
 
-Having all the tasks run on the server is great, however, it is desirable to be able to run every task run locally too. The benefits are
+Having all the tasks run on the server is great, however, it is desirable to be able to run every task locally too. The benefits are
 
 - It reduces the reliance on servers, which means developers can work offline.
 - It provides developers with quicker feedback because they can run each stage individually (and usually faster) without having to wait until they push to the server (or create a pull request).
@@ -39,13 +40,12 @@ Having all the tasks run on the server is great, however, it is desirable to be 
 
 ## Tools to run locally
 
-A task runner should be used to run the tasks. This allows
+A task runner should be used to run the tasks. This allows the developer
 
-- The developer to easily see the list of tasks which can be run.
-- The developer to ignore the details of how each tool is invoked.
+- To easily see the list of tasks which can be run.
+- To ignore the details of how each tool is invoked.
 
-The most ubiquitous task runner is GNU Make. Taking Make as an example, in the makefile there would be a target for `test-coverage` which defines what needs to happen to generate the coverage report. The user simply invokes `make test-coverage`
-to generate the report without worrying about how it is generated.
+The most ubiquitous task runner is GNU Make. Using it as an example, in the makefile there would be a target for `test-coverage` which defines what needs to happen to generate the coverage report. The user simply invokes `make test-coverage` to generate the report without worrying about how it is generated.
 
 Depending on the projects main programming language and build system you may choose to use a different tool such as CMake (with add_custom_target) or Python Invoke.
 
@@ -123,7 +123,7 @@ Development dockerfiles will have these main steps
    ```
 
    - **Command line:** We have to pass the input from the host to the input of the container (`--interactive`) and tell the process the input is coming from a terminal (`--tty`).
-   - **Shared data:** A mounted drive gives the container access to to the repository and give the host access to generated artifacts (`--mount`).
+   - **Shared data:** A mounted drive gives the container access to to the repository and gives the host access to generated artifacts (`--mount`).
    - **User_ID:** By default the ubuntu container has root UID which means all the generated artifacts will be owned by root. Use the host's UID in the container (`--user`).
 
 3. Invoke the task runner from within the container
@@ -155,8 +155,8 @@ There is no need to explicitly specify any args because Jenkins will
 Most checking tools (flake8, mypy, etc) can be run over a directory and they will check every relevant file. Sometimes instead of checking every file you may only want to check files that have been modified.
 This is useful when
 
-- working on a legacy system where you want to introduce new rules/checks going forward.
-- the checks take a long time.
+- Working on a legacy system where you want to introduce new rules going forward.
+- The checks take a long time.
 
 Using git a list of modified files can be determined
 
@@ -189,3 +189,6 @@ def flake8(commits="master...HEAD"):
   - New starts to get up and running quickly.
   - Dependency installations to be isolated from the host OS.
 - Git can be used to only check modified files.
+
+## Example
+A minimal HelloWorld example that implements these ideas can be found on [github](https://github.com/aidan-gallagher/ci-pipeline-example).

@@ -4,7 +4,7 @@ title: "Resources"
 toc: true
 ---
 
-This is a small subset of the resources I have learned from that I think are worth sharing.
+This is a subset of the resources I have learned from that I think are worth sharing.
 
 ## Software Architecture
 

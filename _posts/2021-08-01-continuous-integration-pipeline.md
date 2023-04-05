@@ -1,6 +1,6 @@
 ---
 title: "Continuous Integration Pipeline"
-excerpt: "Infrastructure to run tasks locally and on a continuous integration server."
+excerpt: "Using a container and task runner to run tasks locally and on a continuous integration server."
 categories:
   - Blog
 tags:
@@ -22,14 +22,14 @@ There are a number of tasks a developer may wish to perform such as
   - Static analysis
   - Coverage
 
-## Desire for ease
+## Issues With Complicated Tasks
 
 Sometimes the steps required to performing these tasks can get quite complicated. If the tasks are not easy for a developer
 
 - The developer may not bother with certain tasks. Which means they may commit changes without running all the checking tools, or inspecting the generated documentation.
 - They may invoke the tools incorrectly by passing the wrong flags or omitting files.
 
-## Desire to run locally
+## Benefits of Running Tasks Locally
 
 Having all the tasks run on the server is great, however, it is desirable to be able to run every task locally too. The benefits are
 
@@ -38,7 +38,7 @@ Having all the tasks run on the server is great, however, it is desirable to be 
 - It help maintainability and the development of new stages because each stage can be tested locally first.
 - It keeps pull request history clean because the author can discover and fix their warnings offline rather than updating their PR to fix warnings.
 
-## Tools to run locally
+## Using a Task Runner to Simplify Execution
 
 A task runner should be used to run the tasks. This allows the developer
 
@@ -49,9 +49,9 @@ The most ubiquitous task runner is GNU Make. Using it as an example, in the make
 
 Depending on the projects main programming language and build system you may choose to use a different tool such as CMake (with add_custom_target) or Python Invoke.
 
-## Continuous integration server
+## Consistent Tool Invocation on CI Server
 
-It is essential all the tasks run on a continuous integration server such as Jenkins. This ensures every pull request does not unknowingly introduce bad changes.
+It is essential all the tasks run on a continuous integration (CI) server such as Jenkins. This ensures every pull request does not unknowingly introduce bad changes.
 
 The task runner provides a simple interface for invoking each tool. Therefore the Jenkinsfile can be a simple wrapper that calls into the task runner in the same manner as the developer does. For example
 
@@ -65,7 +65,7 @@ With this approach the developer and server are both invoking the tools in the s
 
 ![local-server](/assets/2021-08-01-continuous-integration-pipeline/local-server.drawio.svg)
 
-## Dependency versioning
+## Consistent Tool Versioning
 
 Using the task runner we have ensured that each developer and the server will invoke the tools in the correct manner. However if they are not running the same versions of the tools they may see different results.
 
@@ -73,7 +73,7 @@ Usually every repository will contain a file describing it's dependencies (requi
 
 A more generic solution is to use containers to provide an isolated working environment with the correct dependencies.
 
-## Docker container
+## Using Docker to Ensure Consistent Tool Versioning
 
 A Dockerfile in the repository is used to instruct Docker how to create an image with all the necessary tools. The developers and the server can invoke all tasks from within the container to ensure they all get the same result.
 
@@ -108,7 +108,9 @@ Development dockerfiles will have these main steps
     && pip3 install --requirement dev-requirements.txt                     # Pip example
    ```
 
-## Docker locally
+## Running Docker Locally
+
+### Using the CLI
 
 1. To build the image from the dockerfile
 
@@ -134,7 +136,14 @@ Development dockerfiles will have these main steps
 
    Note: `I have no name!` is because there is no matching UID in the /etc/passwd file.
 
-## Docker on server
+### Using VSCode
+1. Open the project in VSCode
+2. F1 -> Dev Containers: Rebuild and Reopen folder in Container
+3. Terminal -> New Terminal (which will now be in container)
+4. Invoke the task runner from within the container
+
+
+## Running Docker on CI Server
 
 Customize the Jenkins execution environment by instructing Jenkins to use the dockerfile checked into the repository to build the container.
 
@@ -150,7 +159,7 @@ There is no need to explicitly specify any args because Jenkins will
 - Set the working directory.
 - Set the UID & GID to the same as the host.
 
-## Only checking modified files
+## Only Checking Modified Files
 
 Most checking tools (flake8, mypy, etc) can be run over a directory and they will check every relevant file. Sometimes instead of checking every file you may only want to check files that have been modified.
 This is useful when

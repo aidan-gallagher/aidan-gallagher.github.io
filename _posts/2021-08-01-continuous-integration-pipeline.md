@@ -2,7 +2,7 @@
 title: "Continuous Integration Pipeline"
 excerpt: "Using a container and task runner to run tasks locally and on a continuous integration server."
 categories:
-  - Blog
+  - Articles
 tags:
   - Jenkins
   - Docker

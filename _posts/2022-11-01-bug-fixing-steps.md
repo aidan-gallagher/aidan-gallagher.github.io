@@ -2,7 +2,7 @@
 title: "Bug Fixing Steps"
 excerpt: "Walking through the steps taken to fix a bug."
 categories:
-  - Blog
+  - Articles
 tags:
   - Debugging
 ---

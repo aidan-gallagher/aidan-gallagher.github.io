@@ -6,15 +6,22 @@ toc: true
 
 This is a subset of the resources I have learned from that I think are worth sharing.
 
+<style>
+  table {
+    width:100%;
+  }
+</style>
+
 ## Software Architecture
 
-- [Martin Fowler](https://martinfowler.com/architecture/)
-- [12 Factor App - Heroku](https://12factor.net/)
+|[Martin Fowler](https://martinfowler.com/architecture/)| Website |  |
+|[12 Factor App (Heroku) ](https://12factor.net/)| Article|   |
 
 ### Domain Driven Design
 
-- [DDD: The Good Parts - Jimmy Bogard](https://www.youtube.com/watch?v=U6CeaA-Phqo) (Youtube video)
-- [Domain analysis - Microsoft](https://docs.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis)
+|[DDD: The Good Parts ](https://www.youtube.com/watch?v=U6CeaA-Phqo)| Video|  |
+|[Domain analysis (Microsoft)](https://docs.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis)| Article|  |
+
 
 ### Microservices
 
@@ -33,8 +40,10 @@ This is a subset of the resources I have learned from that I think are worth sha
 
 ## C++
 
-- [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines): Guidelines for writing modern C++. It is not important to memorize the recommendations because most of them can be enforced using a static analysis tool. It is good to understand the rational behind the guidelines and this is what this document does well.
-- [C++ FAQ](https://isocpp.org/faq): Helps to explain the language design
+| [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines) | Webpage | It is not important to memorize the recommendations because most of them can be enforced using a static analysis tool. It is good to understand the rational behind the guidelines and this is what this document does well. |
+| [C++ FAQ](https://isocpp.org/faq) | Article | Helps to explain the language design. |
+
+
 - [CppCon](https://www.youtube.com/user/CppCon/videos?view=0&sort=p&flow=grid) (Youtube Channel)
 - [CppCast](https://open.spotify.com/show/3NPVzS05lvJLv3ovgF3OAP) (podcast): Hit or miss depending on the guest. Good for keeping up to date with what is happening in the C++ ecosystem and hearing real world stories.
 

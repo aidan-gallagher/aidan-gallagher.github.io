@@ -17,7 +17,7 @@ title: Aidan Gallagher
 masthead_title: " "
 description: >- # this means to ignore newlines until "baseurl:"
   Software engineering blog providing tutorials.
-minimal_mistakes_skin: dark
+minimal_mistakes_skin: mint
 search: true
 
 # Build settings
@@ -67,14 +67,14 @@ author:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/aidangallagher"
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "far fa-fw fa-envelope"
       url: >-
         mailto:
         aidgal2
         @
         gmail.com
     - label: "Resume"
-      icon: "fas fa-fw fa-file"
+      icon: "far fa-fw fa-file"
       url: "/assets/GallagherResume.pdf"
 
 words_per_minute: 150
@@ -118,4 +118,4 @@ comments:
   utterances:
     issue-term:          "pathname"
     label:               "Blog-Comments"
-    theme:               "photon-dark"
+    theme:               "preferred-color-scheme"

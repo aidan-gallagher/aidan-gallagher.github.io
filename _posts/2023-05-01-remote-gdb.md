@@ -17,18 +17,16 @@ The following steps are for debugging an operating system daemon written in C/C+
 
 ## Prepare the Program
 
-1. Build the program with debug and without optimisation.
+1. Package the program with debug symbols and without optimisation.  
+This should be achieved by prepending `DEB_BUILD_OPTIONS=debug,nostrip,noopt` to `dpkg-buildpackage`. 
 ```
-meson -Ddebug=true -Doptimization=0 build
-cd build && ninja
-```
-
-2. Package the program.
-```
-dpkg-buildpackage 
+DEB_BUILD_OPTIONS=debug,nostrip,noopt dpkg-buildpackage 
 ```
 
-3. Copy the package to the remote machine's home directory.
+If the package's debian/rules isn't setup correctly to handle these options then you may have to edit the build system manually (e.g. meson.build file) to set the debug on & optimisation off.
+
+
+2. Copy the package to the remote machine's home directory.
 ```
 scp ../<my_deb_pacakge>.deb <management_ip_address>:~
 ```

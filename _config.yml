@@ -60,6 +60,9 @@ author:
             \n\n
             Currently interested in software architecture, build systems, automation and agile methodologies."
   links:
+    - label: "Resume"
+      icon: "far fa-fw fa-file"
+      url: "/assets/GallagherResume.pdf"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/aidan-gallagher"
@@ -73,9 +76,6 @@ author:
         aidgal2
         @
         gmail.com
-    - label: "Resume"
-      icon: "far fa-fw fa-file"
-      url: "/assets/GallagherResume.pdf"
     - label: "PGP Key"
       icon: "fas fa-key"
       url: "/assets/PGP-public-key.txt" 

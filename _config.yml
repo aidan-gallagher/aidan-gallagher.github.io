@@ -76,6 +76,10 @@ author:
     - label: "Resume"
       icon: "far fa-fw fa-file"
       url: "/assets/GallagherResume.pdf"
+    - label: "PGP Key"
+      icon: "fas fa-key"
+      url: "/assets/PGP-public-key.txt" 
+      # Icons found here: https://fontawesome.com/v5/search
 
 words_per_minute: 150
 defaults:

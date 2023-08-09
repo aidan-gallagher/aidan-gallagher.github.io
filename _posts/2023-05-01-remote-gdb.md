@@ -3,6 +3,8 @@ title: "Remote Debugging Using GDB and VSCode"
 excerpt: "Notes on using gdb and VSCode to remotely debug a daemon on a Debian system."
 categories:
   - Notes
+tags:
+  - Debugging
 ---
 
 # Introduction

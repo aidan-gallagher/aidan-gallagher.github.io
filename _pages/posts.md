@@ -24,7 +24,14 @@ feature_row:
     btn_class: "btn--primary"
     image_path: /assets/images/icons/tag.png
     alt: "tag icon"
+  - title: "Search"
+    excerpt: "Posts sorted by search."
+    url: "/search"
+    btn_label: "Go to search"
+    btn_class: "btn--primary"
+    image_size: 1
+    image_path: /assets/images/icons/tag.png
+    alt: "tag icon"
 ---
-
 
 {% include feature_row %}

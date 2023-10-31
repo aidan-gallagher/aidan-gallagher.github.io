@@ -63,7 +63,7 @@ stage('build') {
 
 With this approach the developer and server are both invoking the tools in the same manner. The definition of which is mastered in the task runner code.
 
-![local-server](/assets/2021-08-01-continuous-integration-pipeline/local-server.drawio.svg)
+![ci-pipeline](/assets/2021-08-01-continuous-integration-pipeline/ci-pipeline.drawio.svg)
 
 ## Consistent Tool Versioning
 
@@ -76,6 +76,8 @@ A more generic solution is to use containers to provide an isolated working envi
 ## Using Docker to Ensure Consistent Tool Versioning
 
 A Dockerfile in the repository is used to instruct Docker how to create an image with all the necessary tools. The developers and the server can invoke all tasks from within the container to ensure they all get the same result.
+
+![ci-pipeline-with-docker](/assets/2021-08-01-continuous-integration-pipeline/ci-pipeline-with-container.drawio.svg)
 
 The benefit are
 

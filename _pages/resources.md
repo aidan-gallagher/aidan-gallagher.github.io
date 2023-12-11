@@ -67,7 +67,8 @@ These are some useful resources I have learned from that I would recommend to ot
 ## Networking
 
 | [Networking tutorial (Ben Eater)](https://www.youtube.com/playlist?list=PLowKtXNTBypH19whXTVoG3oKSuOcw_XeW) | Youtube Playlist | Great explanation of networking from the physical layer up to the transport layer.
-| [How TCP Works](https://www.youtube.com/playlist?list=PLW8bTPfXNGdAZIKv-y9v_XLXtEqrPtntm) | Youtube Playlist
+| [How TCP Works](https://www.youtube.com/playlist?list=PLW8bTPfXNGdAZIKv-y9v_XLXtEqrPtntm) | Youtube Playlist |
+| [YANG fundamentals](https://www.youtube.com/watch?v=Qyn-BrQTXpc) | Youtube Video |
 
 ## Programming Paradigms
 

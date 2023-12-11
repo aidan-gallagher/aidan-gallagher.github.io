@@ -10,7 +10,7 @@ The theme is [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes).
 **Install:**
 1. `sudo apt-get install rubygems ruby-dev`
 2. `sudo gem install bundler jekyll`
-3. `bundle install`
+3. `sudo bundle install`
 
 **Build locally:** `bundle exec jekyll serve`  
 **View locally:** http://localhost:4000/  

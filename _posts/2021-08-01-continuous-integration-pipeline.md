@@ -202,4 +202,4 @@ def flake8(commits="master...HEAD"):
 - Git can be used to only check modified files.
 
 ## Example
-A minimal HelloWorld example that implements these ideas can be found on [github](https://github.com/aidan-gallagher/ci-pipeline-example).
+A minimal HelloWorld example that implements these ideas can be found on [github](https://github.com/aidan-gallagher/helloworld-debian-package/tree/ci-pipeline-example).
